@@ -1,0 +1,75 @@
+:root
+{
+    --primary-color:white;
+    --font:Roboto;
+    --left-space:200px;
+}
+
+body
+{
+    background:black;
+}
+
+h1
+{
+    color:white;
+    font-size: 3.5rem;
+    margin-top:30px;
+    margin-bottom: 0px;
+    font-family: var(--font);    
+}
+
+#logo
+{
+    width:220px;
+    margin-top:30px;
+}
+
+
+.wrapper
+{
+    margin-left:auto;
+    margin-right:auto;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 200px 100px 200px;
+    grid-gap:5px;
+    grid-template-areas: 
+    "header header header"
+    "attributes-container attributes-container attributes-container"
+    "skills-container skills-container skills-container";
+
+    border:5px solid red;
+}
+.header
+{
+    grid-area:header;
+    border:1px solid green;
+    margin-left:var(--left-space);
+}
+.attributes-container
+{
+    grid-area:attributes-container;
+    border:1px solid blue;
+    margin-left:var(--left-space);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+
+.skills-container
+{
+    grid-area:skills-container;
+    background:yellow;
+
+}
+
+.button
+{
+    border:3px solid grey;
+    width:300px;
+    height:50px;
+}
+
