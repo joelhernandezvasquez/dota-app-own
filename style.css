@@ -10,13 +10,22 @@ body
     background:black;
 }
 
+hr
+{
+    
+    width:910px;
+   border:2px solid grey;
+    margin-left:300px;
+}
+
 h1
 {
     color:white;
-    font-size: 3rem;
+    font-size: 2.7rem;
     margin-top:30px;
     margin-bottom: 0px;
-    font-family: var(--font);    
+    font-family: var(--font);   
+    font-weight: 500; 
 }
 
 span
@@ -31,17 +40,18 @@ span
 label
 {
     color:var(--primary-color);
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 input[type="checkbox"]
 {
-    width:25px;
-    height:25px;
+    width:20px;
+    height:20px;
+    margin:10px 0px 0px 10px;
 }
 
 #logo
 {
-    width:200px;
+    width:170px;
     margin-top:30px;
 }
 
@@ -52,25 +62,25 @@ input[type="checkbox"]
     margin-right:auto;
     display:grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 200px 70px 400px;
+    grid-template-rows: 170px 70px 350px;
     grid-gap:5px;
     grid-template-areas: 
     "header header header"
     "attributes-container attributes-container attributes-container"
     "skills-container skills-container skills-container";
 
-    border:5px solid red;
+    /* border:5px solid red; */
 }
 .header
 {
     grid-area:header;
-    border:1px solid green;
+    /* border:1px solid green; */
     margin-left:var(--left-space);
 }
 .attributes-container
 {
     grid-area:attributes-container;
-    border:1px solid blue;
+    /* border:1px solid blue; */
     margin-left:var(--left-space);
     display:flex;
     flex-direction: row;
@@ -84,7 +94,7 @@ input[type="checkbox"]
 .skills-container
 {
     grid-area:skills-container;
-    border:1px solid yellow;
+    /* border:1px solid yellow; */
     margin-left:var(--left-space);
     display: flex;
     
@@ -110,7 +120,7 @@ margin-top:10px;
 .box
 {
     width:290px;
-    height:320px;
+    height:330px;
     border:3px solid grey;
     margin-right: 40px;
     display:flex;
