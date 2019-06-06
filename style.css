@@ -2,7 +2,7 @@
 {
     --primary-color:white;
     --font:Roboto;
-    --left-space:200px;
+    --left-space:300px;
 }
 
 body
@@ -13,15 +13,35 @@ body
 h1
 {
     color:white;
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-top:30px;
     margin-bottom: 0px;
     font-family: var(--font);    
 }
 
+span
+{
+    color:var(--primary-color);
+    font-size: 1.7rem;
+    display:inline-block;
+    margin-left:10px;
+    margin-top:8px;
+   
+}
+label
+{
+    color:var(--primary-color);
+    font-size: 2rem;
+}
+input[type="checkbox"]
+{
+    width:25px;
+    height:25px;
+}
+
 #logo
 {
-    width:220px;
+    width:200px;
     margin-top:30px;
 }
 
@@ -32,7 +52,7 @@ h1
     margin-right:auto;
     display:grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 200px 100px 200px;
+    grid-template-rows: 200px 70px 400px;
     grid-gap:5px;
     grid-template-areas: 
     "header header header"
@@ -54,22 +74,46 @@ h1
     margin-left:var(--left-space);
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
-    
+}
+.attributes-container > *
+{
+    margin-right:40px;
 }
 
 
 .skills-container
 {
     grid-area:skills-container;
-    background:yellow;
-
+    border:1px solid yellow;
+    margin-left:var(--left-space);
+    display: flex;
+    
 }
 
 .button
 {
     border:3px solid grey;
-    width:300px;
+    width:290px;
     height:50px;
+    
+    
 }
 
+.icon
+{
+width:30px;
+float:right;
+margin-right:10px;
+margin-top:10px;  
+}
+
+.box
+{
+    width:290px;
+    height:320px;
+    border:3px solid grey;
+    margin-right: 40px;
+    display:flex;
+    flex-direction: column;
+
+}
