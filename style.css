@@ -13,7 +13,7 @@ body
 hr
 {
     
-    width:910px;
+    width:970px;
    border:2px solid grey;
     margin-left:300px;
 }
@@ -126,4 +126,24 @@ margin-top:10px;
     display:flex;
     flex-direction: column;
 
+}
+
+.heroes
+{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    margin-left:260px;
+    grid-gap:20px;
+    width: 970px;
+    
+}
+
+
+.heroe img
+{
+    max-width:100%;
+}
+.heroe span
+{
+    font-size: 1.3rem;
 }

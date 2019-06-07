@@ -39,52 +39,52 @@
 
         <div class="skills-container">
     
-            <div class="box">
-              <div><input type="checkbox" name="strenght"> 
+            <div class="box" id="primary-attribute">
+              <div><input type="checkbox" name="strenght"id="str"> 
               <label for="strenght">Strenght</label></div> 
 
-             <div> <input type="checkbox" name="agility"> 
+             <div> <input type="checkbox" name="agility" id="agi"> 
               <label for="strenght">Agility</label> </div>
 
-             <div> <input type="checkbox" name="intelligence"> 
+             <div> <input type="checkbox" name="intelligence" id="int"> 
               <label for="strenght">Intelligence</label> </div>
             </div>
 
-            <div class="box">
-                <div><input type="checkbox" name="melee"> 
+            <div class="box" id="attack-type">
+                <div><input type="checkbox" name="melee" id="mel"> 
                     <label for="melee">Melee</label></div> 
       
-                   <div> <input type="checkbox" name="ranged"> 
+                   <div> <input type="checkbox" name="ranged" id="ran"> 
                     <label for="ranged">Ranged</label> </div>
       
             </div>
 
-            <div class="box">
-                <div><input type="checkbox" name="carry"> 
+            <div class="box" id="roles">
+                <div><input type="checkbox" name="carry" id="carry"> 
                 <label for="carry">Carry</label></div> 
 
-                <div><input type="checkbox" name="disabler"> 
+                <div><input type="checkbox" name="disabler" id="disabler"> 
                 <label for="disabler">Disabler</label></div> 
 
-                <div><input type="checkbox" name="durable"> 
+                <div><input type="checkbox" name="durable"id="durable"> 
                 <label for="durable">Durable</label></div> 
 
-                <div><input type="checkbox" name="escape"> 
+                <div><input type="checkbox" name="escape" id="escape"> 
                 <label for="escape">Escape</label></div> 
 
-                <div><input type="checkbox" name="initiator"> 
+                <div><input type="checkbox" name="initiator" id="initiator"> 
                 <label for="initiator">Initiator</label></div> 
 
-                <div><input type="checkbox" name="jungler"> 
+                <div><input type="checkbox" name="jungler" id="jungler"> 
                 <label for="jungler">Jungler</label></div> 
 
-                <div><input type="checkbox" name="nuker"> 
+                <div><input type="checkbox" name="nuker" id="nuker"> 
                  <label for="nuker">Nuker</label></div> 
 
-                 <div><input type="checkbox" name="pusher"> 
+                 <div><input type="checkbox" name="pusher" id="pusher"> 
                  <label for="pusher">Pusher</label></div> 
 
-                 <div><input type="checkbox" name="support"> 
+                 <div><input type="checkbox" name="support" id="support"> 
                  <label for="support">Support</label></div>      
 
             </div>
@@ -98,6 +98,13 @@
     <ul class="heroes"> 
         
     </ul>
+
+    <script>
+    const filters = document.querySelector(".skills-container");
+   
+    filters.addEventListener("change",filterHeroes);
+    
+    </script>
 </body>
 
 </html>
