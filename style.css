@@ -130,19 +130,26 @@ margin-top:10px;
 
 .heroes
 {
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
-    margin-left:260px;
-    grid-gap:20px;
-    width: 970px;
+
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(170px,1fr));
+ margin-left:260px;
+ grid-gap:20px;
+ width: 970px;
+}
+.hero
+{
     
 }
-
-
-.heroe img
+.hero img
 {
-    max-width:100%;
+    max-width: 100%;
 }
+.hero span
+{
+    font-size:1.4rem;
+}
+
 .heroe span
 {
     font-size: 1.3rem;
